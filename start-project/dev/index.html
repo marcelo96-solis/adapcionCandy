@@ -1,0 +1,206 @@
+﻿<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+  /* any custom style goes here */
+  .home-button {
+  margin-top: 8px;
+}
+
+.site-name {
+  margin: auto;
+}
+article {
+  margin-top: 50px;
+}
+div.hamburger {
+  padding: 10px 10px;
+  color: purple;
+}
+
+ul.sidebar{
+  text-align: left;
+  padding-right: 150px;
+  padding-left: 0;
+}
+
+.sidebar > li {
+  text-align: left;
+  list-style: none;
+  margin-bottom:10px;
+  font-family: arial;
+}
+
+.sidebar a {
+  text-decoration: none;
+  padding: 10px;
+}
+.close-sidebar {
+  font-size: 1.0em;
+  padding-left: 5px;
+}
+.home-button {
+  margin-top: 8px;
+}
+.headerbar {
+  text-align: right;
+  background: white;
+  height: 50px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+div.site-name {
+  margin: auto;
+  color: black;
+  align-items: center;
+  font-family: arial;
+}
+
+  body {
+    background-color: purple;
+    background-size: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed
+  }
+  h1,h3{
+    text-align: center;
+    font-family: arial;
+    color: black;
+  }
+  p{
+    text-align: justify;
+    font-family: arial;
+  }
+  amp-img {
+    border: 1px solid black;
+    max-width: 100%;
+  }
+
+  div.interior{
+    color: black;
+    background: white;
+    margin: 50px 0px 25px 0px;
+    padding: 10px 20px 10px 20px;
+  }
+  #sidebar1{
+    margin-top: 50px;
+    text-align: left;
+  }
+  .main-footer{
+    text-align: center;
+  }
+  .main-footer_lista a {
+    text-decoration: none;
+    text-align: center;
+    font-family: arial;
+    color: black;
+  }
+
+</style>
+
+<header class="headerbar">
+    <a href="#">
+    <amp-img class="home-button" src="logo.png" width="40" height="40"></amp-img>
+  </a>
+ <div class="site-name">News Site</div>
+    <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
+</header>
+
+<amp-sidebar id="sidebar1" layout="nodisplay" side="right">
+      <ul class="sidebar">
+        <li><a href="https://www.youtube.com/">Home</a></li>
+        <li><a href="https://www.google.com.mx/?hl=es-419">Contacts</a></li>
+        <li><a href="#">Email</a></li>
+      </ul>
+</amp-sidebar>
+  </head>
+
+  <body>
+    <div class="contenido">
+      <div class="interior">
+        <amp-img  alt = "Rx 78 2" 
+          src = "../app/asset/images/gundam.jpg" 
+          width = "900" 
+          height = "675" 
+          layout = "responsive" > 
+        </amp-img >
+        <h3>Mobile Suit Gundam</h3>
+        <p>Gundam, también conocida como Serie Gundam, es una franquicia de series animadas de ciencia ficción creadas por Yoshiyuki Tomino para los estudios Sunrise</p>
+       </div> 
+
+       <div class="interior">
+        <amp-img  alt = "Rx 78 2" 
+          src = "imagen.jpg" 
+          width = "900" 
+          height = "675" 
+          layout = "responsive" > 
+        </amp-img >
+        <h3>Mobile Suit Gundam</h3>
+        <p>Gundam, también conocida como Serie Gundam, es una franquicia de series animadas de ciencia ficción creadas por Yoshiyuki Tomino para los estudios Sunrise</p>
+       </div> 
+
+       <div class="interior">
+        <amp-img  alt = "Rx 78 2" 
+          src = "imagen.jpg" 
+          width = "900" 
+          height = "675" 
+          layout = "responsive" > 
+        </amp-img >
+        <h3>Mobile Suit Gundam</h3>
+        <p>Gundam, también conocida como Serie Gundam, es una franquicia de series animadas de ciencia ficción creadas por Yoshiyuki Tomino para los estudios Sunrise</p>
+       </div> 
+        <footer class="main-footer">
+          <div class="main-footer_container">
+            <div class="flex-container">
+
+              <div class="row-main-footer_content">
+                <div class="main-footer_logo">
+                  <a href="#" class="main-footer-logo">
+                    <img src="logo.png" alt="Candy" class="main-footer-logo__image" 
+                    width="100" height="100">
+                  </a> 
+                </div>
+              </div>
+              <div class="row-main-footer_content">
+                <div class="main-footer_enlaces">
+                   <ul class="main-footer_lista">
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Contacs</a></li>
+                     <li><a href="#">Email</a></li>
+                   </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </footer>
+
+    </div>
+
+  </body>
+</html>
